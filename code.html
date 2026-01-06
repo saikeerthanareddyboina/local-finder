@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LocalDeal | Connect with Local Dealers</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="code.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-content">
+            <a href="#home" class="logo">
+                <i class="fas fa-handshake"></i>
+                <span>LocalDeal</span>
+            </a>
+            
+            <nav>
+                <ul>
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#features" class="nav-link">Features</a></li>
+                    <li><a href="#categories" class="nav-link">Categories</a></li>
+                    <li><a href="#how-it-works" class="nav-link">How It Works</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <div class="auth-buttons">
+                <button class="btn btn-outline" id="login-btn">
+                    <i class="fas fa-sign-in-alt"></i> Login
+                </button>
+                <button class="btn btn-primary" id="register-btn">
+                    <i class="fas fa-user-plus"></i> Sign Up
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Landing Page Content -->
+    <div id="landing-page">
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="container hero-content">
+                <h1>Connect with Local Dealers Near You</h1>
+                <p>Sell your products quickly to verified local dealers. Get instant offers, fair prices, and grow your business with our trusted marketplace.</p>
+                
+                <div class="hero-buttons">
+                    <button class="btn btn-secondary" id="find-dealers-hero">
+                        <i class="fas fa-search-location"></i> Find Dealers
+                    </button>
+                    <button class="btn btn-accent" id="start-selling-hero">
+                        <i class="fas fa-box-open"></i> Start Selling
+                    </button>
+                </div>
+                
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">5,000+</div>
+                        <div class="stat-label">Verified Dealers</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">$2M+</div>
+                        <div class="stat-label">Products Sold</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">98%</div>
+                        <div class="stat-label">Satisfaction Rate</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">50+</div>
+                        <div class="stat-label">Cities Covered</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="section" id="features">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Why Choose LocalDeal?</h2>
+                    <p>We make selling to local dealers simple, secure, and profitable</p>
+                </div>
+                
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Verified Dealers</h3>
+                        <p>All dealers are thoroughly verified with background checks and customer reviews.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <h3>Instant Connections</h3>
+                        <p>Connect with dealers in your area instantly and get offers within minutes.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-dollar-sign"></i>
+                        </div>
+                        <h3>Best Prices</h3>
+                        <p>Get competitive offers from multiple dealers to ensure you get the best price.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-truck"></i>
+                        </div>
+                        <h3>Easy Pickup</h3>
+                        <p>Most dealers offer free pickup services for your convenience.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Categories Section -->
+        <section class="section" id="categories">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Browse Dealers by Category</h2>
+                    <p>Find specialized dealers for different types of products</p>
+                </div>
+                
+                <div class="categories-grid">
+                    <div class="category-card" data-category="electronics">
+                        <div class="category-icon">
+                            <i class="fas fa-laptop"></i>
+                        </div>
+                        <div class="category-content">
+                            <h3>Electronics</h3>
+                            <p>Dealers buying phones, laptops, TVs, and gadgets</p>
+                            <div class="dealer-count">856 Dealers</div>
+                        </div>
+                    </div>
+                    
+                    <div class="category-card" data-category="clothing">
+                        <div class="category-icon">
+                            <i class="fas fa-tshirt"></i>
+                        </div>
+                        <div class="category-content">
+                            <h3>Clothing & Fashion</h3>
+                            <p>Dealers buying clothes, shoes, and accessories</p>
+                            <div class="dealer-count">642 Dealers</div>
+                        </div>
+                    </div>
+                    
+                    <div class="category-card" data-category="furniture">
+                        <div class="category-icon">
+                            <i class="fas fa-couch"></i>
+                        </div>
+                        <div class="category-content">
+                            <h3>Furniture</h3>
+                            <p>Dealers buying home and office furniture</p>
+                            <div class="dealer-count">423 Dealers</div>
+                        </div>
+                    </div>
+                    
+                    <div class="category-card" data-category="automotive">
+                        <div class="category-icon">
+                            <i class="fas fa-car"></i>
+                        </div>
+                        <div class="category-content">
+                            <h3>Automotive</h3>
+                            <p>Dealers buying car parts and accessories</p>
+                            <div class="dealer-count">318 Dealers</div>
+                        </div>
+                    </div>
+                    
+                    <div class="category-card" data-category="sports">
+                        <div class="category-icon">
+                            <i class="fas fa-basketball-ball"></i>
+                        </div>
+                        <div class="category-content">
+                            <h3>Sports Equipment</h3>
+                            <p>Dealers buying sports gear and fitness equipment</p>
+                            <div class="dealer-count">297 Dealers</div>
+                        </div>
+                    </div>
+                    
+                    <div class="category-card" data-category="collectibles">
+                        <div class="category-icon">
+                            <i class="fas fa-gem"></i>
+                        </div>
+                        <div class="category-content">
+                            <h3>Collectibles</h3>
+                            <p>Dealers buying antiques and rare items</p>
+                            <div class="dealer-count">189 Dealers</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div style="text-align: center; margin-top: 40px;">
+                    <button class="btn btn-primary" id="view-all-categories">
+                        <i class="fas fa-eye"></i> View All Categories
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works -->
+        <section class="section how-it-works" id="how-it-works">
+            <div class="container">
+                <div class="section-title">
+                    <h2>How It Works</h2>
+                    <p>Sell your products in just 3 simple steps</p>
+                </div>
+                
+                <div class="steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <h3>Create Your Account</h3>
+                        <p>Sign up for free and create your seller profile. It takes just 2 minutes.</p>
+                    </div>
+                    
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <h3>Find Local Dealers</h3>
+                        <p>Browse our directory of verified dealers in your area by category.</p>
+                    </div>
+                    
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <h3>Sell & Get Paid</h3>
+                        <p>Connect with dealers, agree on price, and receive instant payment.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section" id="cta">
+            <div class="container cta-content">
+                <h2>Ready to Sell Your Products?</h2>
+                <p>Join thousands of successful sellers who have found the perfect dealers for their products. Start selling today!</p>
+                <div class="hero-buttons">
+                    <button class="btn btn-secondary" id="cta-signup">
+                        <i class="fas fa-user-plus"></i> Sign Up Free
+                    </button>
+                    <button class="btn btn-accent" id="cta-find-dealers">
+                        <i class="fas fa-search"></i> Browse Dealers
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer id="contact">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-column">
+                        <h3>LocalDeal</h3>
+                        <p>Connecting sellers with local dealers since 2024. Making commerce local, simple, and profitable.</p>
+                        <div class="social-buttons" style="margin-top: 20px; justify-content: flex-start;">
+                            <button class="social-btn facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </button>
+                            <button class="social-btn twitter">
+                                <i class="fab fa-twitter"></i>
+                            </button>
+                            <button class="social-btn google">
+                                <i class="fab fa-instagram"></i>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h3>Quick Links</h3>
+                        <ul class="footer-links">
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#features">Features</a></li>
+                            <li><a href="#categories">Categories</a></li>
+                            <li><a href="#how-it-works">How It Works</a></li>
+                            <li><a href="#cta">Get Started</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h3>Resources</h3>
+                        <ul class="footer-links">
+                            <li><a href="#">Seller Guide</a></li>
+                            <li><a href="#">Dealer Directory</a></li>
+                            <li><a href="#">Pricing Guide</a></li>
+                            <li><a href="#">Safety Tips</a></li>
+                            <li><a href="#">FAQs</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h3>Contact Us</h3>
+                        <ul class="footer-links">
+                            <li><i class="fas fa-map-marker-alt"></i> 123 Commerce St, City, State 12345</li>
+                            <li><i class="fas fa-phone"></i> (555) 123-4567</li>
+                            <li><i class="fas fa-envelope"></i> support@localdeal.com</li>
+                            <li><i class="fas fa-clock"></i> Mon-Fri: 9AM-6PM EST</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="footer-bottom">
+                    <p>&copy; 2026 LocalDeal. All rights reserved. | <a href="#" style="color: #9ca3af;">Privacy Policy</a> | <a href="#" style="color: #9ca3af;">Terms of Service</a></p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Dealers Directory Page (Hidden by default) -->
+    <div id="dealers-page" class="dealers-page" style="display: none;">
+        <div class="container">
+            <div class="page-header">
+                <h1>Local Dealers Directory</h1>
+                <p>Browse verified dealers by category. Click on any dealer to contact them directly.</p>
+            </div>
+            
+            <div class="category-tabs" id="category-tabs">
+                <!-- Category tabs will be generated by JavaScript -->
+            </div>
+            
+            <div class="dealers-grid" id="dealers-container">
+                <!-- Dealers will be loaded by JavaScript -->
+            </div>
+            
+            <div style="text-align: center; margin-top: 40px;">
+                <button class="btn btn-outline" id="back-to-home">
+                    <i class="fas fa-arrow-left"></i> Back to Home
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Login Modal -->
+    <div class="modal" id="login-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Login to Your Account</h2>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="login-form">
+                    <div class="form-group">
+                        <label for="login-email">Email Address</label>
+                        <input type="email" id="login-email" class="form-control" placeholder="Enter your email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="login-password">Password</label>
+                        <input type="password" id="login-password" class="form-control" placeholder="Enter your password" required>
+                        <div style="text-align: right; margin-top: 8px;">
+                            <a href="#" style="color: var(--primary); font-size: 0.9rem;">Forgot password?</a>
+                        </div>
+                    </div>
+                    
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary" style="flex: 1;">
+                            <i class="fas fa-sign-in-alt"></i> Login
+                        </button>
+                    </div>
+                </form>
+                
+                <div class="social-login">
+                    <p>Or login with</p>
+                    <div class="social-buttons">
+                        <button class="social-btn facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </button>
+                        <button class="social-btn google">
+                            <i class="fab fa-google"></i>
+                        </button>
+                        <button class="social-btn twitter">
+                            <i class="fab fa-twitter"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <div style="text-align: center; margin-top: 25px; padding-top: 20px; border-top: 1px solid var(--gray-light);">
+                    <p>Don't have an account? <a href="#" id="switch-to-register" style="color: var(--primary); font-weight: 600;">Sign up here</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Register Modal -->
+    <div class="modal" id="register-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Create Your Account</h2>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="register-form">
+                    <div class="form-group">
+                        <label for="register-name">Full Name</label>
+                        <input type="text" id="register-name" class="form-control" placeholder="Enter your full name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="register-email">Email Address</label>
+                        <input type="email" id="register-email" class="form-control" placeholder="Enter your email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="register-phone">Phone Number</label>
+                        <input type="tel" id="register-phone" class="form-control" placeholder="Enter your phone number">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="register-password">Password</label>
+                        <input type="password" id="register-password" class="form-control" placeholder="Create a password" required>
+                        <div style="font-size: 0.85rem; color: var(--gray); margin-top: 5px;">Must be at least 8 characters</div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="register-confirm">Confirm Password</label>
+                        <input type="password" id="register-confirm" class="form-control" placeholder="Confirm your password" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="user-type">I want to:</label>
+                        <select id="user-type" class="form-control" required>
+                            <option value="">Select option</option>
+                            <option value="seller">Sell products to dealers</option>
+                            <option value="dealer">Buy products as a dealer</option>
+                            <option value="both">Both buy and sell</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-secondary" style="flex: 1;">
+                            <i class="fas fa-user-plus"></i> Create Account
+                        </button>
+                    </div>
+                </form>
+                
+                <div style="text-align: center; margin-top: 25px; padding-top: 20px; border-top: 1px solid var(--gray-light);">
+                    <p>Already have an account? <a href="#" id="switch-to-login" style="color: var(--primary); font-weight: 600;">Login here</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Notification -->
+    <div id="notification" class="notification">
+        <i class="fas fa-info-circle"></i>
+        <span id="notification-text">Notification message</span>
+    </div>
+
+    <script src="code.js"></script>
+</body>
+</html>
